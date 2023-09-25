@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>新營糖鐵自行車道</name>
+    <description> </description>
+    <Style id="icon-1502-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1502-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1502-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1502-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1502-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-4294-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>4.294</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-4294-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6.441</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-4294-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-4294-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-4294-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>自行車道</name>
+      <Placemark>
+        <name>自行車道</name>
+        <styleUrl>#line-0288D1-4294-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            120.3216547,23.3384682,0
+            120.3242296,23.3531651,0
+            120.3251742,23.3573336,0
+            120.3329419,23.3613522,0
+            120.3417396,23.3650949,0
+            120.3443574,23.3667101,0
+            120.3458165,23.3699405,0
+            120.3485885,23.3747357,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>鐵馬驛站</name>
+      <Placemark>
+        <name>臺南市政府警察局新營分局民治派出所</name>
+        <styleUrl>#icon-1502-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.3131095,23.3104988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>慢慢租車店-後壁驛頭cozybike rental</name>
+        <styleUrl>#icon-1502-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.3609895,23.3662166,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

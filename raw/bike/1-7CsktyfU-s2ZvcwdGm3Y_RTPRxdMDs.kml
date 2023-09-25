@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>興化台糖自行車道</name>
+    <description> 以前台灣糖業全盛時期，五分車鐵道遍佈台灣中南部平原，然而製糖沒落之後，這些台糖鐵路也多數被淹沒在鄉郊荒野甚至拆除，所幸懷舊風氣的興起，再加上自行車運動休閒風氣融入生活，部分台糖廢棄鐵道已逐漸改建為自行車道，將自行車路線和舊軌道遺跡相互融合，自行車道從佳里奇美醫院至禮化里活動中心，沿途為鄉村農田之景色，不僅活化了台糖歷史遺跡，也促進自行車活動的多元化與專屬路權。</description>
+    <Style id="icon-1502-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1502-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1502-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1502-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1502-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-6231-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>6.231</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-6231-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>9.3465</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-6231-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-6231-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-6231-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>自行車道</name>
+      <Placemark>
+        <name>自行車道</name>
+        <styleUrl>#line-0288D1-6231-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            120.1826117,23.1813626,0
+            120.1835343,23.1906332,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>鐵馬驛站</name>
+      <Placemark>
+        <name>臺南市政府警察局佳里分局佳興派出所</name>
+        <styleUrl>#icon-1502-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            120.188183,23.1901795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
