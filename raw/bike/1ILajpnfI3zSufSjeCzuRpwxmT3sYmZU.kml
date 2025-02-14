@@ -74,9 +74,9 @@
       </Pair>
     </StyleMap>
     <Folder>
-      <name>從台南市東山區三榮里臺糖鐵道公園到台南市東山區北勢寮鐵支路花廊的路線</name>
+      <name>東山區自行車道</name>
       <Placemark>
-        <name>從台南市東山區三榮里臺糖鐵道公園到台南市東山區北勢寮鐵支路花廊的路線</name>
+        <name>東山區自行車道</name>
         <styleUrl>#line-1267FF-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>

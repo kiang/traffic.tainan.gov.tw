@@ -19,7 +19,7 @@ $context = stream_context_create(
 );
 $listFile = $bikeRawPath . '/list.html';
 if (!file_exists($listFile)) {
-    file_put_contents($listFile, file_get_contents('https://traffic.tainan.gov.tw/content/uploads/bicycle/cc_bicycle.html', false, $context));
+    file_put_contents($listFile, file_get_contents('https://traffic.tainan.gov.tw/bicycle/cc_bicycle.html', false, $context));
 }
 $list = file_get_contents($listFile);
 $pos = strpos($list, 'href="bicycle');
@@ -33,13 +33,17 @@ while (false !== $pos) {
     $fileName = substr($list, $pos, $posEnd - $pos);
     $rawFile = $bikeRawPath . '/' . $fileName;
     if (!file_exists($rawFile)) {
-        file_put_contents($rawFile, file_get_contents('https://traffic.tainan.gov.tw/content/uploads/bicycle/' . $fileName, false, $context));
+        file_put_contents($rawFile, file_get_contents('https://traffic.tainan.gov.tw/bicycle/' . $fileName, false, $context));
     }
     $raw = file_get_contents($rawFile);
 
     $rawPos = strpos($raw, 'https://www.google.com/maps/d/embed');
     $rawPosEnd = strpos($raw, '"', $rawPos);
     $parts = parse_url(substr($raw, $rawPos, $rawPosEnd - $rawPos));
+    if(!isset($parts['query'])) {
+        $pos = strpos($list, 'href="bicycle', $posEnd);
+        continue;
+    }
     parse_str($parts['query'], $output);
     $rawKmlFile = $bikeRawPath . '/' . $output['mid'] . '.kml';
     if (!file_exists($rawKmlFile)) {
